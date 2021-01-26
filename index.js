@@ -22,7 +22,7 @@ checkCode = function (code) {
         }
         try {
             body = JSON.parse(body);
-            if(body.message != "Unknown Gift Code" && body.message != "You are being rate limited."&& body.code == 200){
+            if(body.message != "Unknown Gift Code" && body.message != "You are being rate limited."){
                 console.log(chalk.green`https://discord.gift/${code} is Valid!`);
                  console.log(JSON.stringify(body, null, 4));
                 working.push(`https://discord.gift/${code}`);
