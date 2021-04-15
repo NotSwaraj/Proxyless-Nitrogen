@@ -30,7 +30,7 @@ checkCode = function (code) {
                 
             }
             else {
-                console.log(chalk.red`${code} is invalid`);console.log(JSON.stringify(body, null, 4));
+                console.log(chalk.red`${code} is invalid`);
             }
         }
         catch (error) {
